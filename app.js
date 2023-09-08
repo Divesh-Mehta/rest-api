@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 // POST method endpoint
-app.post('/api/user', (req, res) => {
+app.post('/bfhl', (req, res) => {
   const requestData = req.body;
 
   // Ensure all required fields are present in the request
@@ -38,7 +38,7 @@ app.post('/api/user', (req, res) => {
 });
 
 // GET method endpoint
-app.get('/api/operation_code', (req, res) => {
+app.get('/bfhl', (req, res) => {
   // Generate an operation code (you can use any logic here)
   const operationCode = generateOperationCode();
 
